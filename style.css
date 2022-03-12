@@ -1,0 +1,253 @@
+/* ********************************************************************************************* */
+/* Importing font from google font  */
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/*Reseting the css */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for Body*/
+body{
+    background: url("/images/longway.jpg");    /*Background for body*/
+    background-size:cover;
+    background-repeat: no-repeat;
+    
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for main container  */
+.main{
+    display: flex;        
+    align-items: center;
+    
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* css for container Which container left slider*/
+.container{
+            height: 100vh;
+            width: 25%;
+            display: flex;
+            justify-content: flex-start;
+            /* border: 2px solid white; */ 
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* css for leftslider */
+.leftslider{
+            height: 100%; /* 100% Full-height */
+            width:0;  /*0 width - change this with JavaScript */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Stay on top */
+            top: 0; /* Stay at the top */
+            left: 0;
+            background:black;
+            overflow-x: hidden; /* Disable horizontal scroll */
+            transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+            opacity: 0.9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* css for logo  */
+.logo{
+    background: url('https://cellularnews.com/wp-content/uploads/2020/06/05-spider-man-homecoming-just-another-teenager-325x485.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 120px;
+    height: 120px;
+    border: 7px solid  white;
+    border-radius: 50%;
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for .logo:hover  */
+.logo:hover{
+    border:10px solid white ;
+    transition-duration: 1s;
+    transform: rotate(1turn);
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* css for buttons sliders  */
+.arrows{
+    width: 50px;
+    height: 50px;
+    margin: 8px;
+    padding: 8px;
+    border: none;
+    color: white;
+    border-radius: 9px;
+    cursor: pointer;
+}
+/* css for button which will open the slider  */
+#openbtn{
+    background: url("https://cdn-icons-png.flaticon.com/512/86/86489.png");
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: invert(1);
+    
+}
+/* css for button which will close the slider  */
+#closebtn{
+    position: absolute;
+    top: 0;
+    right: 5px;
+    background: url("https://cdn-icons.flaticon.com/png/512/3384/premium/3384811.png?token=exp=1647088940~hmac=dc3a941c10fa68e6cbb1400b6b68dcfd");
+    background-size: cover;
+    background-repeat: no-repeat;
+     filter: invert(1);
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for ul  */
+ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for audio */
+audio{
+    width: 200%;
+    height: 32px;
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/*Css for li in navbar  */
+li{
+    padding: 8px;
+    margin: 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for li:hover  */
+ li:hover{
+    border-bottom: 4px solid white;
+    border-radius: 9px;
+    cursor: pointer;
+} 
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for for the social container which contain all the app icon and link  */
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for All the icon inside the .social contianer  */
+.box{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    margin: 4px 4px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for .box:hover  */
+.box:hover{
+    border: 6px solid white;
+    transition-duration: 1s;
+    transform: rotate(1turn);
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for instagram icon */
+#box1{
+    background: url("https://cdn-icons.flaticon.com/png/512/4494/premium/4494488.png?token=exp=1647061172~hmac=ec1ec56510c3a8bf445e6e0d0261360f");
+    background-size: cover;
+   background-repeat: no-repeat;
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for facebook icon  */
+#box2{
+    background: url("https://cdn-icons.flaticon.com/png/512/3670/premium/3670124.png?token=exp=1647061447~hmac=6bfe973c6339ef71368d8e1b3ed37609");
+    background-size: cover;
+   background-repeat: no-repeat;
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for twitter icon  */
+#box3{
+    background: url("https://cdn-icons.flaticon.com/png/512/2504/premium/2504947.png?token=exp=1647061621~hmac=14d2c8a9389f47de30c5c46265db54cd");
+    background-size: cover;
+   background-repeat: no-repeat;
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for tryhackme container  */
+#box4{
+    background: url("https://cdn-icons.flaticon.com/png/512/2766/premium/2766147.png?token=exp=1647061697~hmac=591cc40a3a942544b59daa1aeee3061f");
+    background-size: cover;
+   background-repeat: no-repeat;
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for the .name container which has fron material of home page */
+.name{
+    height: 100vh;
+    width: 50%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    color: white;
+}
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* Css for the heading inside the .name container  */
+.name h1{
+    font-size: 35px;
+    font-family: 'Permanent Marker', cursive;
+    
+}
+/* ********************************************************************************************* */
+
+
+
